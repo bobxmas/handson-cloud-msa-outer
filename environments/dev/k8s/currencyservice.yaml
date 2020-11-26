@@ -14,7 +14,7 @@ spec:
       terminationGracePeriodSeconds: 5
       containers:
       - name: eshop-currencyservice
-        image: gcr.io/architect-certification-289902/17/eshop-currencyservice
+        image: gcr.io/architect-certification-289902/17/eshop-currencyservice@sha256:eb237afe4cb5eb9e0951779ecd23346cb62adf742e2ab95af9e2149aeceb2a3b
         ports:
         - containerPort: 8094
         env:

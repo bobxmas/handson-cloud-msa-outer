@@ -14,7 +14,7 @@ spec:
       terminationGracePeriodSeconds: 5
       containers:
       - name: eshop-productservice
-        image: gcr.io/architect-certification-289902/17/eshop-productservice
+        image: gcr.io/architect-certification-289902/17/eshop-productservice@sha256:5f3cd4656333875416623c09d895cb64e64f36674ca624b674f5925da64c0452
         ports:
         - containerPort: 8092
         env:
