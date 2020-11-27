@@ -25,6 +25,18 @@ resource "google_container_cluster" "primary" {
       disabled = false
       auth     = "AUTH_MUTUAL_TLS"
     }
+    horizontal_pod_autoscaling {
+
+    }
+  }
+
+  cluster_autoscaling {
+    enabled = true
+    resource_limits {
+      resource_type = "cpu"
+      minimum = 20
+      maximum = 60
+    }
   }
 }
 
